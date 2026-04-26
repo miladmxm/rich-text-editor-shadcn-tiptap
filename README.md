@@ -5,26 +5,6 @@
 > A clean, customizable rich text editor that combines the power of TipTap with the elegant design of shadcn/ui.  
 > **This is not a boilerplate — I customized the toolbar, styling, extensions, and UX to fit real-world needs.**
 
-## 📋 Table of Contents
-
-- [Why This Editor?](#why-this-editor)
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [Getting Started](#getting-started)
-- [Usage](#usage)
-- [Tutorial: Build Your Own](#tutorial-build-your-own)
-  - [Step 1: Setup Project](#step-1-setup-project)
-  - [Step 2: Install Dependencies](#step-2-install-dependencies)
-  - [Step 3: Create Basic Editor](#step-3-create-basic-editor)
-  - [Step 4: Add Toolbar with shadcn/ui](#step-4-add-toolbar-with-shadcnuibuttons)
-  - [Step 5: Add More Extensions](#step-5-add-more-extensions)
-  - [Step 6: Customize Styling](#step-6-customize-styling)
-  - [Step 7: Add Dark/Light Mode Support](#step-7-add-darklight-mode-support)
-- [What I Personally Changed](#what-i-personally-changed)
-- [Project Structure](#project-structure)
-- [Contributing](#contributing)
-- [License](#license)
-
 ## 🎯 Why This Editor?
 
 I needed a rich text editor that:
