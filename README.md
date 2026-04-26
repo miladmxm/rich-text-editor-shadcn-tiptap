@@ -1,6 +1,6 @@
 # ✍️ Rich Text Editor — Custom Built with shadcn/ui & TipTap
 
-![Editor Preview](./public/screenshot.png)
+![Editor Preview](./public/screenshot-1.png)
 
 > A clean, customizable rich text editor that combines the power of TipTap with the elegant design of shadcn/ui.  
 > **This is not a boilerplate — I customized the toolbar, styling, extensions, and UX to fit real-world needs.**
@@ -33,6 +33,14 @@ So I built this editor from scratch using TipTap and dressed it entirely with sh
 - **shadcn/ui** — component library for the UI
 - **Tailwind CSS** — utility-first styling
 - **Vite** — fast builds and HMR
+
+## 📸 Live Demo & Screenshots
+
+<div align="center">
+<img src="./public/screenshot-2.png" width="40%" />
+<img src="./public/screenshot-3.png" width="40%" />
+</div>
+
 
 ## 🚀 Getting Started
 

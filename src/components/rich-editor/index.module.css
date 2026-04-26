@@ -105,14 +105,13 @@
       padding: 6px 8px;
       position: relative;
       vertical-align: top;
-
       > * {
         margin-bottom: 0;
       }
     }
 
     th {
-      background-color: var(--color-secondary);
+      background-color: var(--color-accent-foreground);
       font-weight: bold;
       text-align: left;
     }
@@ -186,9 +185,27 @@
     }
   }
   div[data-resize-handle] {
-    width: 10px;
+    width: 5px;
     height: 30px;
-    background-color: burlywood;
+    cursor: ew-resize;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    background-color: var(--color-primary);
+    &:before {
+      content: "";
+      width: 30px;
+      height: 5px;
+      position: absolute;
+      top: 100%;
+      background-color: var(--color-primary);
+      border-radius: 0 5px 5px 0;
+    }
+  }
+  div[data-resize-handle="bottom-right"] {
+    &:before {
+      right: calc(100% - 5px);
+      border-radius: 5px 0 0 5px;
+    }
   }
   :global(.iframe-wrapper) {
     iframe {
