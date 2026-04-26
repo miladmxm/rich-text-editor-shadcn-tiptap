@@ -1,4 +1,3 @@
-/* eslint-disable @eslint-react/no-unstable-context-value */
 "use client";
 
 import type { VariantProps } from "class-variance-authority";
