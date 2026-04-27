@@ -1,7 +1,6 @@
 import { useTiptap } from "@tiptap/react";
 import { Check, SquareCode } from "lucide-react";
 import { useRef, useState } from "react";
-import * as v from "valibot";
 
 import { Button } from "../../ui/button";
 import {
@@ -13,12 +12,8 @@ import {
 } from "../../ui/dialog";
 import { Field, FieldError } from "../../ui/field";
 import { Input } from "../../ui/input";
+import { validateUrl } from "@/lib/validation";
 
-const URLschema = v.pipe(v.string(), v.url());
-const validateUrl = (input?: string) => {
-  const { success, output } = v.safeParse(URLschema, input);
-  if (success) return output;
-};
 const getSafeURLfromInputValue = (input?: string) => {
   const isValidData = validateUrl(input);
   if (isValidData) return isValidData;
