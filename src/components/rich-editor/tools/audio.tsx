@@ -23,7 +23,7 @@ const AddAudio = () => {
   const handleAddAudio = ({ url }: { url: string }) => {
     editor.chain().focus().setAudio({ src: url }).run();
   };
-  const handleAddIframe = () => {
+  const handleSubmit = () => {
     const value = validateUrl(inputRef.current?.value);
     if (value) {
       handleAddAudio({ url: value });
@@ -56,7 +56,7 @@ const AddAudio = () => {
             )}
           </Field>
           <Field className="flex-1">
-            <Button type="button" onClick={handleAddIframe}>
+            <Button type="button" onClick={handleSubmit}>
               <Check />
             </Button>
           </Field>
